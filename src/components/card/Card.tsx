@@ -4,7 +4,7 @@ type BaseCardProps = Readonly<{ children: ReactNode }>;
 
 type CardProps = BaseCardProps & Readonly<{ linkTo: string }>;
 
-export default function Card({ linkTo, children }: CardProps) {
+export function Card({ linkTo, children }: CardProps) {
   return (
     <a
       href={linkTo}

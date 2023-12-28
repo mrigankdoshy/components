@@ -1,7 +1,7 @@
-import Components from 'src/pages/home/Components.tsx';
-import Header from 'src/pages/home/Header.tsx';
+import { Components } from 'src/pages/home/Components.tsx';
+import { Header } from 'src/pages/home/Header.tsx';
 
-export default function Home() {
+export function Home() {
   return (
     <div className="flex-col mx-32">
       <Header />
