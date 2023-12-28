@@ -1,9 +1,8 @@
 import { ReactNode } from 'react';
 
-type CardProps = Readonly<{
-  linkTo: string;
-  children: ReactNode;
-}>;
+type BaseCardProps = Readonly<{ children: ReactNode }>;
+
+type CardProps = BaseCardProps & Readonly<{ linkTo: string }>;
 
 export default function Card({ linkTo, children }: CardProps) {
   return (
@@ -16,7 +15,7 @@ export default function Card({ linkTo, children }: CardProps) {
   );
 }
 
-Card.Title = function Title({ children }: { children: ReactNode }) {
+Card.Title = function Title({ children }: BaseCardProps) {
   return (
     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
       {children}
@@ -24,7 +23,7 @@ Card.Title = function Title({ children }: { children: ReactNode }) {
   );
 };
 
-Card.Subtitle = function Subtitle({ children }: { children: ReactNode }) {
+Card.Subtitle = function Subtitle({ children }: BaseCardProps) {
   return (
     <p className="font-normal text-gray-700 dark:text-gray-400">{children}</p>
   );
