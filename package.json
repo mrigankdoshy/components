@@ -14,7 +14,7 @@
 		"preview": "vite preview",
 		"fix": "npm run fix:lint && npm run fix:prettier",
 		"fix:lint": "eslint src --ext .tsx --ext .ts --fix",
-		"fix:prettier": "prettier --config ./.prettierrc -w 'src/**/*.{tsx,ts}' && git update-index --again"
+		"fix:prettier": "prettier --config ./.prettierrc -w 'src/**/*.{tsx,ts,css}' && git update-index --again"
 	},
 	"dependencies": {
 		"react": "^18.2.0",

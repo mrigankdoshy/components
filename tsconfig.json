@@ -1,33 +1,31 @@
 {
-  "compilerOptions": {
-    /* Base Options */
-    "target": "es2022",
-    "lib": ["es2022", "dom", "dom.iterable"],
-    "moduleDetection": "force",
-    "moduleResolution": "NodeNext",
-    "module": "NodeNext",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "allowJs": true,
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",    
-    "baseUrl": ".",
-    "paths": {
-      "src/*": ["./src/*"],
-    },
+	"compilerOptions": {
+		/* Base Options */
+		"target": "es2022",
+		"lib": ["es2022", "dom", "dom.iterable"],
+		"moduleDetection": "force",
+		"moduleResolution": "NodeNext",
+		"module": "NodeNext",
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"allowJs": true,
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"baseUrl": ".",
+		"paths": {
+			"src/*": ["./src/*"]
+		},
 
-    /* Strictness */
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true,
-
-  },
-  "include": ["src"],
-  
+		/* Strictness */
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"include": ["src"]
 }
