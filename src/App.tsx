@@ -1,5 +1,10 @@
-import 'src/main.css';
+import Spotlight from 'src/components/spotlight/Spotlight.tsx';
+import Home from 'src/pages/home/Home.tsx';
 
 export default function App() {
-  return <h1>Vite + React</h1>;
+  return (
+    <Spotlight>
+      <Home />
+    </Spotlight>
+  );
 }

@@ -3,7 +3,6 @@
   "bracketSameLine": false,
   "bracketSpacing": true,
   "endOfLine": "lf",
-  "jsxBracketSameLine": false,
   "printWidth": 80,
   "semi": true,
   "singleAttributePerLine": false,
