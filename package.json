@@ -17,6 +17,7 @@
 		"fix:prettier": "prettier --config ./.prettierrc -w 'src/**/*.{tsx,ts,css}' && git update-index --again"
 	},
 	"dependencies": {
+		"framer-motion": "^10.16.16",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
