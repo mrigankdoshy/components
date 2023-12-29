@@ -1,4 +1,4 @@
-export default function Header() {
+export function Header() {
   return (
     <div>
       <div className="mt-2 flex items-center gap-x-2">

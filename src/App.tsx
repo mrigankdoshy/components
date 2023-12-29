@@ -1,10 +1,23 @@
-import Spotlight from 'src/components/spotlight/Spotlight.tsx';
-import Home from 'src/pages/home/Home.tsx';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Spotlight } from 'src/components/spotlight/Spotlight.tsx';
+import { CardDetails } from 'src/pages/details/CardDetails.tsx';
+import { Home } from 'src/pages/home/Home.tsx';
 
-export default function App() {
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
+  {
+    path: '/card',
+    element: <CardDetails />,
+  },
+]);
+
+export function App() {
   return (
     <Spotlight>
-      <Home />
+      <RouterProvider router={router} />
     </Spotlight>
   );
 }

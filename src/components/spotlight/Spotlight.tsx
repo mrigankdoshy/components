@@ -3,7 +3,7 @@ import { MouseEvent, ReactNode } from 'react';
 
 type SpotlightProps = Readonly<{ children: ReactNode }>;
 
-export default function Spotlight({ children }: SpotlightProps) {
+export function Spotlight({ children }: SpotlightProps) {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
