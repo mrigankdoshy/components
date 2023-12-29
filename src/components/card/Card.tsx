@@ -1,30 +1,27 @@
 import { ReactNode } from 'react';
 
-type BaseCardProps = Readonly<{ children: ReactNode }>;
+type CardProps = Readonly<{
+  children: ReactNode;
+}>;
 
-type CardProps = BaseCardProps & Readonly<{ linkTo: string }>;
-
-export function Card({ linkTo, children }: CardProps) {
-  return (
-    <a
-      href={linkTo}
-      className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-    >
-      {children}
-    </a>
-  );
+export function Card({ children }: CardProps) {
+  return <div className="flex flex-col justify-center gap-4">{children}</div>;
 }
 
-Card.Title = function Title({ children }: BaseCardProps) {
+type CardImageProps = Readonly<{ image: string }>;
+
+Card.Image = function Image({ image }: CardImageProps) {
   return (
-    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-      {children}
-    </h5>
+    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <img className="rounded-lg" src={image} alt="" />
+    </div>
   );
 };
 
-Card.Subtitle = function Subtitle({ children }: BaseCardProps) {
+Card.Title = function Title({ children }: CardProps) {
   return (
-    <p className="font-normal text-gray-700 dark:text-gray-400">{children}</p>
+    <div className="font-normal text-gray-700 dark:text-gray-400">
+      {children}
+    </div>
   );
 };
