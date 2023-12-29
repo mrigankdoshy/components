@@ -6,7 +6,7 @@ type CardProps = Readonly<{
 
 export function Card({ children }: CardProps) {
   return (
-    <div className="block max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <div className="block max-w-sm rounded-lg shadow bg-white border dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:bg-gray-100  dark:hover:bg-gray-700 transform transition duration-500 hover:scale-105">
       {children}
     </div>
   );
@@ -20,7 +20,7 @@ Card.Image = function Image({ image }: CardImageProps) {
 
 Card.Title = function Title({ children }: CardProps) {
   return (
-    <h5 className="mx-5 mt-5 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+    <h5 className="mx-5 mt-5 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
       {children}
     </h5>
   );
