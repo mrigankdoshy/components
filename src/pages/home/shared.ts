@@ -1,13 +1,15 @@
 type Component = Readonly<{
   id: string;
-  name: string;
+  title: string;
+  subtitle: string;
   image: string;
 }>;
 
 export const COMPONENTS: Component[] = [
   {
     id: 'card',
-    name: 'Card',
+    title: 'Card',
+    subtitle: 'Reusable card component',
     image: 'https://picsum.photos/500/250',
   },
 ];

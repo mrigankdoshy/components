@@ -5,11 +5,12 @@ import { COMPONENTS } from 'src/pages/home/shared.ts';
 export function Components() {
   return (
     <div className="grid grid-cols-3 gap-8 my-8">
-      {COMPONENTS.map(({ id, name, image }) => (
+      {COMPONENTS.map(({ id, title, subtitle, image }) => (
         <Link key={id} to={`/${id}`}>
           <Card>
             <Card.Image image={image} />
-            <Card.Title>{name}</Card.Title>
+            <Card.Title>{title}</Card.Title>
+            <Card.Subtitle>{subtitle}</Card.Subtitle>
           </Card>
         </Link>
       ))}
